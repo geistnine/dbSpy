@@ -20,7 +20,7 @@ Known bugs/issues
 
 - Table connection (handle) does not automatically render after a foreign key is added and the column data is saved. 
 - In production, remote postgres database connections do not work. We suspect this is due to container environment (nodeJS) not having access to pg_dump command. 
-- In development, WSL/Ubuntu users may have trouble running pg_dump due to version mismatch. Run `sudo apt-get --purge remove postgresql` to clear configuration files and zombie directories before installing postgresql fresh.
+- In development, WSL/Ubuntu 20.04.5 users may have trouble running pg_dump due to version mismatch. Run `sudo apt-get --purge remove postgresql` to clear configuration files and zombie directories before installing postgresql fresh.
 - Undo function will not regress the state of the canvas to the point where it is empty. Whether this is a design choice or an issue is up to you.
 
 
